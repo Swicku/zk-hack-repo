@@ -55,6 +55,8 @@ export class Voting extends SmartContract {
         this.root.set(initialRoot);
         this.agreeVotes.set(UInt32.from(0))
         this.disagreeVotes.set(UInt32.from(0))
+        this.title.set(Field.from(""))
+        this.description.set(Field.from(""))
     }
 
     @method
